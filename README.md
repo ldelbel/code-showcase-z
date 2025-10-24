@@ -27,7 +27,7 @@ A modern React and TypeScript application built with Vite, featuring a responsiv
 
 1. Clone the repository:
 ```
-git clone <repository-url>
+git clone https://github.com/ldelbel/code-showcase-z.git
 cd code-showcase-z
 ```
 
