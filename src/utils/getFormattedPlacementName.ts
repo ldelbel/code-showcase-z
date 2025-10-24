@@ -1,0 +1,66 @@
+import { Languages } from '@zodic/shared/types';
+
+const placementNames: Record<Languages, Record<string, string>> = {
+  'en-us': {
+    sun: 'Sun',
+    moon: 'Moon',
+    mercury: 'Mercury',
+    venus: 'Venus',
+    mars: 'Mars',
+    jupiter: 'Jupiter',
+    saturn: 'Saturn',
+    neptune: 'Neptune',
+    uranus: 'Uranus',
+    pluto: 'Pluto',
+    ascendant: 'Ascendant',
+    descendant: 'Descendant',
+    midheaven: 'Midheaven',
+    imum_coeli: 'Imum Coeli',
+    north_node: 'North Node',
+    south_node: 'South Node',
+    chiron: 'Chiron',
+    lilith: 'Lilith',
+    vertex: 'Vertex',
+    antivertex: 'Antivertex',
+    pars_fortuna: 'Pars Fortuna',
+    pars_spiritus: 'Pars Spiritus',
+    pars_amoris: 'Pars Amoris',
+    pars_victoria: 'Pars Victoria',
+    pars_fortitudo: 'Pars Fortitudo',
+    pars_necessitatis: 'Pars Necessitatis',
+  },
+  'pt-br': {
+    sun: 'Sol',
+    moon: 'Lua',
+    mercury: 'Mercúrio',
+    venus: 'Vênus',
+    mars: 'Marte',
+    jupiter: 'Júpiter',
+    saturn: 'Saturno',
+    neptune: 'Netuno',
+    uranus: 'Urano',
+    pluto: 'Plutão',
+    ascendant: 'Ascendente',
+    descendant: 'Descendente',
+    midheaven: 'Meio do Céu',
+    imum_coeli: 'Fundo do Céu',
+    north_node: 'Nodo Norte',
+    south_node: 'Nodo Sul',
+    chiron: 'Quíron',
+    lilith: 'Lilith',
+    vertex: 'Vértice',
+    antivertex: 'Antivértice',
+    pars_fortuna: 'Pars Fortuna',
+    pars_spiritus: 'Pars Spiritus',
+    pars_amoris: 'Pars Amoris',
+    pars_victoria: 'Pars Victoria',
+    pars_fortitudo: 'Pars Fortitudo',
+    pars_necessitatis: 'Pars Necessitatis',
+  },
+};
+
+const getFormattedPlacementName = (language: Languages, placement: string) => {
+  return placementNames[language]?.[placement] || placement;
+};
+
+export default getFormattedPlacementName;

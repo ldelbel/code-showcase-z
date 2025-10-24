@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .text-shadow {
+    text-shadow: 1px 5px 5px rgba(0, 0, 0, 0.7);
+  }
+}
+
+.title {
+  @apply font-bold text-whitesmoke;
+  font-size: 20px;
+  font-family: 'Inter';
+}
+
+.subtitle {
+  @apply bg-golden-gradient bg-clip-text text-transparent font-semibold text-lg;
+  font-size: 18px;
+  font-family: 'Rajdhani';
+}

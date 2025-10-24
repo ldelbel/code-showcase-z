@@ -1,0 +1,87 @@
+.tabs-navigation {
+  .tab-button {
+    @apply text-white w-20 h-8 px-[0.5px] flex whitespace-nowrap justify-center items-center bg-DarkGray font-bold outline-none border-transparent;
+    @apply shadow-[4px_4px_4px_rgba(18,19,21,1),-4px_-6px_4px_rgba(56,56,58,0.5)];
+    font-family: 'Rajdhani';
+    font-size: 12px;
+    position: relative;
+  }
+  position: relative;
+}
+
+.tab-button.active {
+  @apply text-oldgoldlight shadow-[inset_4px_4px_4px_rgba(18,19,21,1),inset_-4px_-4px_4px_rgba(56,56,58,0.5),4px_4px_4px_rgba(18,19,21,1),-4px_-6px_4px_rgba(56,56,58,0.6)] border-2;
+  text-shadow: -1px -1px 6px rgba(255, 255, 255, 0.4), 3px 3px 10px rgba(0, 0, 0, 1);
+}
+
+.premium-tabs-wrapper {
+  @apply flex gap-[2px] relative ;
+  position: relative;
+}
+
+.premium-tabs-wrapper::after {
+  content: "Premium";
+  @apply text-oldgoldlight font-bold text-xs absolute top-[-17px] z-[2] text-center w-full;
+  font-family: 'Rajdhani';
+}
+.premium-tabs-wrapper::before {
+  content: '';
+  @apply bg-DarkGray w-[50px] h-[10px] absolute top-[-17px] z-[1];
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: 'Rajdhani';
+}
+
+.tab-button.premium {
+  @apply border border-oldgoldlight;
+}
+
+.tab-button .lock-icon {
+  @apply absolute bottom-[-3px] right-[-2px];
+}
+
+.tab-button.premium.active {
+  @apply text-customYellow2 border border-oldgoldlight;
+  border-width: 1px !important;
+  text-shadow: 
+    1px 1px 3px #FEF1D060,
+    -1px -1px 3px #FEF1D060,
+    1px 1px 1px #FFEC9430,
+    -1px 1px 1px #FFEC9430,
+    1px -1px 1px #FFEC9430,
+    -1px -1px 1px #FFEC9430;
+}
+
+.dashboard-header {
+  background: linear-gradient(88.1deg, #202020 27.92%, #323232 92.98%);
+}
+
+.tabs-container {
+  @apply pt-14 flex flex-col gap-2.5 select-none touch-none;
+  background: radial-gradient(174.71% 87.3% at 21.88% 8.6%, #252525 0%, #242424 100%);
+  box-shadow: 0px 4px 4px 0px #00000040 inset;
+  -webkit-user-drag: none;
+  -webkit-touch-callout: none;
+  pointer-events: none;
+  touch-action: none;
+  position: relative;
+  z-index: 20;
+}
+
+.tabs-container .tab-button {
+  pointer-events: auto;
+  cursor: pointer;
+}
+
+.tabs-container::after {
+  content: '';
+  @apply bg-golden-gradient w-full h-[1px] shadow-[0px_3px_3px_1px_#00000080];
+}
+
+.notification-container {
+  @apply absolute left-6 top-2 p-[2px] mt-2 min-w-64 h-36 bg-golden-gradient rounded-lg shadow-md z-10;
+}
+
+.notification-container > div {
+  @apply bg-white w-full h-full text-customGray5 font-medium text-center text-base rounded-md flex justify-center items-center;
+}

@@ -1,0 +1,5 @@
+.bottom-nav {
+  height: 55px;
+  z-index: 1;
+  background: linear-gradient(90deg, #A47A1E 3.31%, #D3A84C 24.66%, #FFEC94 49.89%, #E6BE69 75.11%, #FFD87C 102.93%, #B58F3E 117.8%, #956D13 129.45%);
+}

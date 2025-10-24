@@ -1,0 +1,161 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  /* Radial gradient for glow effect */
+  .bg-gradient-radial {
+    background-image: radial-gradient(circle, rgba(255, 236, 148, var(--glow-opacity, 0.8)) 50%, rgba(181, 143, 62, 0.5) 75%, transparent 50%);
+    filter: blur(20px);
+  }
+
+  /* Text shadow effect */
+  .golden-shine {
+    box-shadow: 0 0 5px #FFD87C, 0 0 10px #D3A84C, 0 0 15px #FFEC94, 0 0 20px #E6BE69, 0 0 25px #FFD87C;
+  }
+
+ 
+
+  /* Glow animation */
+  .animate-glow {
+    animation: glow 2.5s cubic-bezier(0.25, 0.1, 0.25, 1) forwards;
+    --glow-opacity: 0.6;
+  }
+
+  @keyframes glow {
+    0% {
+      width: 0;
+      height: 0;
+      --glow-opacity: 0.6;
+    }
+    5% {
+      width: 10vw;
+      height: 10vw;
+      --glow-opacity: 0.62;
+    }
+    10% {
+      width: 20vw;
+      height: 20vw;
+      --glow-opacity: 0.64;
+    }
+    15% {
+      width: 30vw;
+      height: 30vw;
+      --glow-opacity: 0.66;
+    }
+    20% {
+      width: 40vw;
+      height: 40vw;
+      --glow-opacity: 0.68;
+    }
+    25% {
+      width: 55vw;
+      height: 55vw;
+      --glow-opacity: 0.70;
+    }
+    30% {
+      width: 70vw;
+      height: 70vw;
+      --glow-opacity: 0.72;
+    }
+    35% {
+      width: 85vw;
+      height: 85vw;
+      --glow-opacity: 0.74;
+    }
+    40% {
+      width: 100vw;
+      height: 100vw;
+      --glow-opacity: 0.76;
+    }
+    45% {
+      width: 120vw;
+      height: 120vw;
+      --glow-opacity: 0.78;
+    }
+    50% {
+      width: 140vw;
+      height: 140vw;
+      --glow-opacity: 0.80;
+    }
+    55% {
+      width: 160vw;
+      height: 160vw;
+      --glow-opacity: 0.82;
+    }
+    60% {
+      width: 180vw;
+      height: 180vw;
+      --glow-opacity: 0.84;
+    }
+    65% {
+      width: 195vw;
+      height: 195vw;
+      --glow-opacity: 0.86;
+    }
+    70% {
+      width: 205vw;
+      height: 205vw;
+      --glow-opacity: 0.88;
+    }
+    75% {
+      width: 215vw;
+      height: 215vw;
+      --glow-opacity: 0.90;
+    }
+    80% {
+      width: 220vw;
+      height: 220vw;
+      --glow-opacity: 0.92;
+    }
+    85% {
+      width: 225vw;
+      height: 225vw;
+      --glow-opacity: 0.94;
+    }
+    90% {
+      width: 227vw;
+      height: 227vw;
+      --glow-opacity: 0.96;
+    }
+    95% {
+      width: 229vw;
+      height: 229vw;
+      --glow-opacity: 0.98;
+    }
+    100% {
+      width: 230vw;
+      height: 230vw;
+      --glow-opacity: 1;
+    }
+  }
+
+  /* Fade-in animation for images */
+  .animate-fadeIn {
+    animation: fadeIn 2s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    to {
+      opacity: 1;
+    }
+  }
+
+   /* Golden shine animation that starts after 6 seconds */
+   .golden-shine-delayed {
+    animation: delayedGoldenShine 4s ease-in-out forwards;
+    animation-delay: 1.5s;
+  }
+
+  @keyframes delayedGoldenShine {
+    0% {
+      box-shadow: none;
+    }
+    50% {
+      box-shadow: 0 0 10px #FFD87C, 0 0 15px #D3A84C, 0 0 20px #FFEC94, 0 0 25px #E6BE69, 0 0 30px #FFD87C;
+    }
+    100% {
+      box-shadow: none;
+    }
+  }
+}

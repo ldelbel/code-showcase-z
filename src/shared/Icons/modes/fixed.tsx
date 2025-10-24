@@ -1,0 +1,58 @@
+interface FixedIconProps {
+  className?: string;
+  size?: number;
+}
+
+const FixedIcon: React.FC<FixedIconProps> = ({ className, size = 20 }) => {
+  return (
+    <svg
+      width={size * (31 / 30)}
+      height={size}
+      viewBox="0 0 31 30"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M0.498308 0.050977C0.420003 0.0793311 0.277629 0.192748 0.177967 0.299075L0 0.490466V15.0149V29.5392L0.234917 29.7661L0.462715 30H15.056H29.6493L29.8771 29.7661L30.1121 29.5392V15.0078V0.476289L29.8771 0.249456L29.6493 0.0155344L15.1415 0.00135732C7.16852 -0.0057312 0.576614 0.0155344 0.498308 0.050977ZM28.4392 15.0078V28.3342H15.056H1.67289V15.0078V1.68134H15.056H28.4392V15.0078Z"
+        fill="url(#paint0_linear_3114_2160)"
+      />
+      <path
+        d="M7.61696 14.221C7.30374 14.3556 7.11865 14.6463 7.11865 15.0149C7.11865 15.3126 7.15425 15.3906 7.35357 15.589L7.58137 15.823H15.056H22.5306L22.7584 15.589C22.9577 15.3906 22.9933 15.3126 22.9933 15.0078C22.9933 14.703 22.9577 14.625 22.7584 14.4265L22.5306 14.1926L15.1414 14.1784C11.0838 14.1713 7.69527 14.1926 7.61696 14.221Z"
+        fill="url(#paint1_linear_3114_2160)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_3114_2160"
+          x1="0"
+          y1="15"
+          x2="30.1121"
+          y2="15"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.025" stop-color="#A47A1E" />
+          <stop offset="0.19" stop-color="#D3A84C" />
+          <stop offset="0.385" stop-color="#FFEC94" />
+          <stop offset="0.58" stop-color="#E6BE69" />
+          <stop offset="0.795" stop-color="#FFD87C" />
+        </linearGradient>
+        <linearGradient
+          id="paint1_linear_3114_2160"
+          x1="7.11865"
+          y1="15"
+          x2="22.9933"
+          y2="15"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop offset="0.025" stop-color="#A47A1E" />
+          <stop offset="0.19" stop-color="#D3A84C" />
+          <stop offset="0.385" stop-color="#FFEC94" />
+          <stop offset="0.58" stop-color="#E6BE69" />
+          <stop offset="0.795" stop-color="#FFD87C" />
+        </linearGradient>
+      </defs>
+    </svg>
+  );
+};
+
+export default FixedIcon;

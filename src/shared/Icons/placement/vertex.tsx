@@ -1,0 +1,29 @@
+interface VertexIconProps {
+  className?: string;
+  size?: number;
+  color?: string;
+}
+
+const VertexIcon: React.FC<VertexIconProps> = ({
+  className,
+  size = 20,
+  color = '#E6BE69',
+}) => {
+  return (
+    <svg
+      width={size}
+      height={size}
+      viewBox="0 0 16 16"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M3.96 16L0.44 0.599999H2.42L5.346 13.91H5.434L8.36 0.599999H10.34L6.82 16H3.96ZM7.38547 16L10.1355 10.39L7.47347 5H9.45347L11.4555 9.07L13.4575 5H15.4375L12.7755 10.39L15.5255 16H13.5455L11.4555 11.71L9.36547 16H7.38547Z"
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export default VertexIcon;

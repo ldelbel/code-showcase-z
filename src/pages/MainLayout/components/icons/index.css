@@ -1,0 +1,26 @@
+.golden-menu-outter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 53px;
+  /* @apply border-2 border-black; */
+}
+
+.dark-menu-outter-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 77px;
+  height: 53px;
+  background: #55472a;
+  box-shadow: 0px 4px 4px 0px #00000080 inset, 0px -4px 10px 0px #00000040 inset;
+}
+
+.square-icon-one {
+  margin-right: 2.5px;
+}
+
+.square-icon-two {
+  margin-bottom: 2px;
+}

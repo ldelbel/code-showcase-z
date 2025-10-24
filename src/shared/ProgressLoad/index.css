@@ -1,0 +1,57 @@
+.logo {
+  @apply w-[150px] h-[150px] rounded-full bg-[url('/zodicLogo.png')] bg-contain bg-no-repeat relative;
+  z-index: 1;
+}
+
+.percentage-load {
+  width: 233px;
+  height: 233px;
+  border-radius: 50%;
+  z-index: 5;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  padding: 20px;
+}
+
+/* .percentage-load circle {
+  filter: drop-shadow(5px 8px 30px #FFCE5180) drop-shadow(-3px -6px 20px #FFCE5180);
+} */
+
+.bar-spin {
+  animation: spin 1s linear infinite;
+}
+
+/* .golden-glow {
+  box-shadow: 0 0 20px 20px rgba(255, 215, 0, 0.7);
+  transition: box-shadow 1.5s ease-in-out;
+}
+
+.no-glow {
+  box-shadow: none;
+  transition: box-shadow 1.5s ease-in-out;
+} */
+
+/* Shining animation for 100% completion */
+@keyframes shine {
+  0% {
+    filter: brightness(1);
+  }
+  50% {
+    filter: brightness(1.5) drop-shadow(0 0 10px #FFEC94);
+  }
+  100% {
+    filter: brightness(1);
+  }
+}
+
+.shine-effect {
+  animation: shine 1.5s ease-in-out infinite;
+}

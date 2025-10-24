@@ -1,0 +1,30 @@
+interface AirIconProps {
+  className?: string;
+  size?: number;
+}
+
+const AirIcon: React.FC<AirIconProps> = ({ className, size = 20 }) => {
+  return (
+    <svg
+      width={size * (3 / 2)}
+      height={size}
+      viewBox="0 0 41 31"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path
+        d="M20.04 7.37L32.7 27H7.35L20.04 7.37ZM20.04 0L0 31H40.04L20.04 0Z"
+        fill="white"
+      />
+      <path
+        d="M1 15H41"
+        stroke="white"
+        stroke-width="4"
+        stroke-miterlimit="10"
+      />
+    </svg>
+  );
+};
+
+export default AirIcon;

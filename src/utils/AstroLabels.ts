@@ -1,0 +1,168 @@
+export const AstroLabels: {
+  [key: string]: { 'en-us': string; 'pt-br': string };
+} = {
+  //? Planets and Placements
+  sun: { 'en-us': 'Sun', 'pt-br': 'Sol' },
+  moon: { 'en-us': 'Moon', 'pt-br': 'Lua' },
+  mercury: { 'en-us': 'Mercury', 'pt-br': 'Mercúrio' },
+  venus: { 'en-us': 'Venus', 'pt-br': 'Vênus' },
+  mars: { 'en-us': 'Mars', 'pt-br': 'Marte' },
+  jupiter: { 'en-us': 'Jupiter', 'pt-br': 'Júpiter' },
+  saturn: { 'en-us': 'Saturn', 'pt-br': 'Saturno' },
+  uranus: { 'en-us': 'Uranus', 'pt-br': 'Urano' },
+  neptune: { 'en-us': 'Neptune', 'pt-br': 'Netuno' },
+  pluto: { 'en-us': 'Pluto', 'pt-br': 'Plutão' },
+  ascendant: { 'en-us': 'Ascendant', 'pt-br': 'Ascendente' },
+  descendant: { 'en-us': 'Descendant', 'pt-br': 'Descendente' },
+  midheaven: { 'en-us': 'Midheaven', 'pt-br': 'Meio do Céu' },
+  imum_coeli: { 'en-us': 'Imum Coeli', 'pt-br': 'Fundo do Céu' },
+  node: { 'en-us': 'North Node', 'pt-br': 'Nodo Norte' },
+  north_node: { 'en-us': 'North Node', 'pt-br': 'Nodo Norte' },
+  south_node: { 'en-us': 'South Node', 'pt-br': 'Nodo Sul' },
+  chiron: { 'en-us': 'Chiron', 'pt-br': 'Quíron' },
+  lilith: { 'en-us': 'Lilith', 'pt-br': 'Lilith' },
+  vertex: { 'en-us': 'Vertex', 'pt-br': 'Vertex' },
+  antivertex: { 'en-us': 'Antivertex', 'pt-br': 'Antivertex' },
+  part_of_fortune: { 'en-us': 'Pars Fortuna', 'pt-br': 'Pars Fortuna' },
+  pars_fortuna: { 'en-us': 'Pars Fortuna', 'pt-br': 'Pars Fortuna' },
+  pars_spiritus: { 'en-us': 'Pars Spiritus', 'pt-br': 'Pars Spiritus' },
+  pars_amoris: { 'en-us': 'Pars Amoris', 'pt-br': 'Pars Amoris' },
+  pars_fortitudo: { 'en-us': 'Pars Fortitudo', 'pt-br': 'Pars Fortitudo' },
+  pars_necessitatis: {
+    'en-us': 'Pars Necessitatis',
+    'pt-br': 'Pars Necessitatis',
+  },
+
+  //? Houses
+  house_1: { 'en-us': '1st House', 'pt-br': '1ª Casa' },
+  house_2: { 'en-us': '2nd House', 'pt-br': '2ª Casa' },
+  house_3: { 'en-us': '3rd House', 'pt-br': '3ª Casa' },
+  house_4: { 'en-us': '4th House', 'pt-br': '4ª Casa' },
+  house_5: { 'en-us': '5th House', 'pt-br': '5ª Casa' },
+  house_6: { 'en-us': '6th House', 'pt-br': '6ª Casa' },
+  house_7: { 'en-us': '7th House', 'pt-br': '7ª Casa' },
+  house_8: { 'en-us': '8th House', 'pt-br': '8ª Casa' },
+  house_9: { 'en-us': '9th House', 'pt-br': '9ª Casa' },
+  house_10: { 'en-us': '10th House', 'pt-br': '10ª Casa' },
+  house_11: { 'en-us': '11th House', 'pt-br': '11ª Casa' },
+  house_12: { 'en-us': '12th House', 'pt-br': '12ª Casa' },
+
+  //? Features
+  moon_phase: { 'en-us': 'Moon Phase', 'pt-br': 'Fase Lunar' },
+  element: { 'en-us': 'Elements', 'pt-br': 'Elementos' },
+  mode: { 'en-us': 'Modes', 'pt-br': 'Modos' },
+  elements: { 'en-us': 'Elements', 'pt-br': 'Elementos' },
+  modes: { 'en-us': 'Modes', 'pt-br': 'Modos' },
+  hemisphere: { 'en-us': 'Hemispheres', 'pt-br': 'Hemisférios' },
+  hemisphere_east_west: {
+    'en-us': 'East-West Hemisphere',
+    'pt-br': 'Hemisfério Leste-Oeste',
+  },
+  hemisphere_north_south: {
+    'en-us': 'North-South Hemisphere',
+    'pt-br': 'Hemisfério Norte-Sul',
+  },
+  dominant_sign: { 'en-us': 'Dominant Sign', 'pt-br': 'Signo Dominante' },
+  north: { 'en-us': 'North', 'pt-br': 'Norte' },
+  south: { 'en-us': 'South', 'pt-br': 'Sul' },
+  east: { 'en-us': 'East', 'pt-br': 'Leste' },
+  west: { 'en-us': 'West', 'pt-br': 'Oeste' },
+
+  //? GenericTitles
+  house: { 'en-us': 'Houses', 'pt-br': 'Casas' },
+  aspect: { 'en-us': 'Aspects', 'pt-br': 'Aspectos' },
+  planet: { 'en-us': 'Planets', 'pt-br': 'Planetas' },
+  houses: { 'en-us': 'Houses', 'pt-br': 'Casas' },
+  aspects: { 'en-us': 'Aspects', 'pt-br': 'Aspectos' },
+  planets: { 'en-us': 'Planets', 'pt-br': 'Planetas' },
+  natal_chart: { 'en-us': 'Natal Chart', 'pt-br': 'Mapa Natal' },
+  advanced: { 'en-us': 'Advanced', 'pt-br': 'Avançado' },
+  intro: { 'en-us': 'Intro', 'pt-br': 'Intro' },
+  my_concepts: { 'en-us': 'My Concepts', 'pt-br': 'Conceitos' },
+  my_artifacts: { 'en-us': 'My Concepts', 'pt-br': 'Artefatos' },
+  overview: { 'en-us': 'Overview', 'pt-br': 'Visão Geral' },
+  concepts: { 'en-us': 'Concepts', 'pt-br': 'Conceitos' },
+  artifacts: { 'en-us': 'Artifacts', 'pt-br': 'Artefatos' },
+  home: { 'en-us': 'Home', 'pt-br': 'Início' },
+  core: { 'en-us': 'Core', 'pt-br': 'Principal' },
+  generate: { 'en-us': 'Generate', 'pt-br': 'Gerar' },
+
+  //? GenericTitles - Concepts
+  crown: { 'en-us': 'The Crown', 'pt-br': 'A Coroa' },
+  amulet: { 'en-us': 'The Amulet', 'pt-br': 'O Amuleto' },
+  scepter: { 'en-us': 'The Scepter', 'pt-br': 'O Cetro' },
+  ring: { 'en-us': 'The Ring', 'pt-br': 'O Anel' },
+  lantern: { 'en-us': 'The Lantern', 'pt-br': 'A Candeia' },
+  orb: { 'en-us': 'The Orb', 'pt-br': 'O Orbe' },
+  my_crown: { 'en-us': 'my Crown', 'pt-br': 'minha Coroa' },
+  my_amulet: { 'en-us': 'my Amulet', 'pt-br': 'meu Amuleto' },
+  my_scepter: { 'en-us': 'my Scepter', 'pt-br': 'meuCetro' },
+  my_ring: { 'en-us': 'my Ring', 'pt-br': 'meu Anel' },
+  my_lantern: { 'en-us': 'my Lantern', 'pt-br': 'minha Candeia' },
+  my_orb: { 'en-us': 'my Orb', 'pt-br': 'meu Orbe' },
+  your_crown: { 'en-us': 'Your Crown', 'pt-br': 'Sua Coroa' },
+  your_amulet: { 'en-us': 'Your Amulet', 'pt-br': 'Seu Amuleto' },
+  your_scepter: { 'en-us': 'Your Scepter', 'pt-br': 'Seu Cetro' },
+  your_ring: { 'en-us': 'Your Ring', 'pt-br': 'Seu Anel' },
+  your_lantern: { 'en-us': 'Your Lantern', 'pt-br': 'Sua Candeia' },
+  your_orb: { 'en-us': 'Your Orb', 'pt-br': 'Seu Orbe' },
+
+  //? Signs
+  aries: { 'en-us': 'Aries', 'pt-br': 'Áries' },
+  taurus: { 'en-us': 'Taurus', 'pt-br': 'Touro' },
+  gemini: { 'en-us': 'Gemini', 'pt-br': 'Gêmeos' },
+  cancer: { 'en-us': 'Cancer', 'pt-br': 'Câncer' },
+  leo: { 'en-us': 'Leo', 'pt-br': 'Leão' },
+  virgo: { 'en-us': 'Virgo', 'pt-br': 'Virgem' },
+  libra: { 'en-us': 'Libra', 'pt-br': 'Libra' },
+  scorpio: { 'en-us': 'Scorpio', 'pt-br': 'Escorpião' },
+  sagittarius: { 'en-us': 'Sagittarius', 'pt-br': 'Sagitário' },
+  capricorn: { 'en-us': 'Capricorn', 'pt-br': 'Capricórnio' },
+  aquarius: { 'en-us': 'Aquarius', 'pt-br': 'Aquário' },
+  pisces: { 'en-us': 'Pisces', 'pt-br': 'Peixes' },
+
+  //? Elements
+  fire: { 'en-us': 'Fire', 'pt-br': 'Fogo' },
+  earth: { 'en-us': 'Earth', 'pt-br': 'Terra' },
+  air: { 'en-us': 'Air', 'pt-br': 'Ar' },
+  water: { 'en-us': 'Water', 'pt-br': 'Água' },
+  balanced: { 'en-us': 'Balanced Elements', 'pt-br': 'Elementos Balanceados' },
+  fire_earth: { 'en-us': 'Fire and Earth', 'pt-br': 'Fogo e Terra' },
+  air_water: { 'en-us': 'Air and Water', 'pt-br': 'Ar e Água' },
+
+  //? Modes
+  cardinal: { 'en-us': 'Cardinal', 'pt-br': 'Cardinal' },
+  fixed: { 'en-us': 'Fixed', 'pt-br': 'Fixo' },
+  mutable: { 'en-us': 'Mutable', 'pt-br': 'Mutável' },
+
+  //? Moon Phases
+  new_moon: { 'en-us': 'New Moon', 'pt-br': 'Lua Nova' },
+  waxing_crescent: {
+    'en-us': 'Waxing Crescent',
+    'pt-br': 'Crescente Ascendente',
+  },
+  first_quarter: { 'en-us': 'First Quarter', 'pt-br': 'Quarto Crescente' },
+  waxing_gibbous: { 'en-us': 'Waxing Gibbous', 'pt-br': 'Gibosa Crescente' },
+  full_moon: { 'en-us': 'Full Moon', 'pt-br': 'Lua Cheia' },
+  waning_gibbous: { 'en-us': 'Waning Gibbous', 'pt-br': 'Gibosa Minguante' },
+  last_quarter: { 'en-us': 'Last Quarter', 'pt-br': 'Quarto Minguante' },
+  waning_crescent: {
+    'en-us': 'Waning Crescent',
+    'pt-br': 'Crescente Minguante',
+  },
+
+  //? Aspects
+  conjunction: { 'en-us': 'Conjunction', 'pt-br': 'Conjunção' },
+  opposition: { 'en-us': 'Opposition', 'pt-br': 'Oposição' },
+  trine: { 'en-us': 'Trine', 'pt-br': 'Trígono' },
+  square: { 'en-us': 'Square', 'pt-br': 'Quadratura' },
+  sextile: { 'en-us': 'Sextile', 'pt-br': 'Sextil' },
+  quincunx: { 'en-us': 'Quincunx', 'pt-br': 'Quincunce' },
+
+  //? Genders
+  male: { 'en-us': 'Male', 'pt-br': 'Masculino' },
+  female: { 'en-us': 'Female', 'pt-br': 'Feminino' },
+  'non-binary': { 'en-us': 'Non-Binary', 'pt-br': 'Não-Binário' },
+};
+
+export default AstroLabels;

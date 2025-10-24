@@ -1,0 +1,29 @@
+interface AntivertexIconProps {
+  className?: string;
+  size?: number;
+  color?: string;
+}
+
+const AntivertexIcon: React.FC<AntivertexIconProps> = ({ 
+  className,
+  size = 17,
+  color = "#E6BE69" 
+}) => {
+  return (
+    <svg 
+      width={size}
+      height={size-1} 
+      viewBox="0 0 17 16" 
+      fill="none" 
+      xmlns="http://www.w3.org/2000/svg"
+      className={className}
+    >
+      <path 
+        d="M0.44 16L4.18 0.599999H7.04L10.78 16H8.8L7.81 12.04H3.41L2.42 16H0.44ZM3.74 10.5H7.48L5.654 2.8H5.566L3.74 10.5ZM8.24484 16L10.9948 10.39L8.33284 5H10.3128L12.3148 9.07L14.3168 5H16.2968L13.6348 10.39L16.3848 16H14.4048L12.3148 11.71L10.2248 16H8.24484Z" 
+        fill={color}
+      />
+    </svg>
+  );
+};
+
+export default AntivertexIcon; 

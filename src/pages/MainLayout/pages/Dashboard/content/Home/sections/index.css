@@ -1,0 +1,25 @@
+.astro-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.astro-right-box {
+  width: 176px;
+  height: 176px;
+  padding: 5px;
+  border-radius: 6px;
+  box-shadow: 
+    -1px -1px 6px 0px #FFFFFF66,
+    3px 3px 10px 0px #000000;
+}
+
+.items-col {
+  height: 100%;
+
+  span {
+    font-family: Roboto;
+    font-size: 12px;
+    font-weight: 600;
+    color: #E6BE69;
+  }
+}
