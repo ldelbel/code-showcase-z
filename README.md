@@ -2,6 +2,8 @@
 
 A modern React and TypeScript application built with Vite, featuring a responsive UI for the Zodic platform with Tailwind CSS, Radix UI components, and advanced state management.
 
+[Video Explanation](https://vimeo.com/1130369258/f482aca6eb)
+
 ### Features
 
 - **React & TypeScript**: Built with React 18 and TypeScript for a robust, type-safe frontend.
